@@ -1,37 +1,71 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
 
-You can use the [editor on GitHub](https://github.com/TrishaGangadhar/DataVizProject2020-GenderGap.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<head>
+    <meta charset="UTF-8">
+    <title>Data Visualization Project: Fall 2020</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://d3js.org/topojson.v3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.js"></script>
+    <script src="js/worldmap.js" async></script>
+    <script src="js/script.js" async></script>
+    <script src="js/lineChart.js" async></script>
+    <script src="js/sunburst.js" async></script>
+</head>
 
-### Markdown
+<body>
+  <div class="topnav">
+    <a id="git_repo" href="https://github.com/tmotahar20/dataviscourse-pr-worldwide_gender_gap2020" >Git Repository</a>
+    <a id="process_book"  target="_blank">Process Book</a>
+    <a id="project_video" >Project Video</a>
+    <a id="visualization" class="active">Visualization</a>
+    <!-- <a href="about.html">About</a> -->
+    <h1>Worldwide Gender Gap</h1>
+  </div>
+  <!-- <div class="header">
+      <h1>Worldwide Gender Gap</h1>
+       
+  </div> -->
+  <div id="dropdown"></div>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+  <!-- <span>
+    <label>Economic Indicator</label>
+    <select id="Economic_Indicator" onchange="changeData()" >
+      <option value="Average Wages">Average Wages</option>
+      <option selected value="Land Ownership">Land Ownership</option>
+      <option value="Purchase Decision">Purchase Decision</option>
+      <option value="GDP">GDP</option>
+    </select>
+  </span> -->
+</br>
+</br>
+  <div class="wrapper">
+      <div class="innerWrapper">
+        <h2>Regions of the world</h2>
+          <!-- <div id="map-chart" class="view">
+           </div>
+          <div id="country-detail"></div> -->
+          <div id="sunburst"></div>
+      </div>
 
-```markdown
-Syntax highlighted code block
+      <!-- <div id="bar-chart" class="view">
+        <h2>Bar Chart</h2>
+      </div> -->
+      <div id="line-chart" class="view">
+        <h2>Comparison of women with men</h2>
+<div id="linechart">
+</div>
+</div>
+</br>
 
-# Header 1
-## Header 2
-### Header 3
+      </div>
 
-- Bulleted
-- List
+  </div>
+</body>
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/TrishaGangadhar/DataVizProject2020-GenderGap.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+</html>
